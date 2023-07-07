@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>	
+	
+	html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 50px
+}
+body {
+  background-color: linen;
+}
+h1 {
+    font-size: 42px;
+    line-height: 1.05;
+    letter-spacing: -1px
+}
+</style>	
+	
+  </head>
+  <body>
+   <h1>Affichage des fiches</h1>
+   <label for="fiche">Nombre des fiches:</label>
+    <!--Entrée minimale 1 et maximale 5-->
+	<input type="number" id="fiche" name="quantity" value="5" min="1" max="5">
+	 <input type = "button" value = "Afficher la sélection" onclick = "selection()">
+    <div id="container"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="app.js"></script> 
+  </body>
+</html>
